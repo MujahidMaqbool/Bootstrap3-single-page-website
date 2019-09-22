@@ -1,0 +1,408 @@
+<div id="app" class="pull-left max-width">    
+    <header>
+        <div class="container">   
+            <div class="row">
+                <div class="logo-wrapper">
+                    <img src="assets/1-header/logo.png" alt="Easy Work"/>
+                </div>
+                <div class="nav-menu-container col-sm-12 col-xs-12 m-t-10">                     
+                    <nav class="navbar navbar-default">                               
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>                                   
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a (click)="scrollToElement(home)" >Home</a></li>
+                                <li><a (click)="scrollToElement(about)" >About Us</a></li>
+                                <li><a (click)="scrollToElement(services)" >Services</a></li>
+                                <li><a (click)="scrollToElement(team)">Our Team</a></li>
+                                <li><a (click)="scrollToElement(contactUs)">Contact Us</a></li>                                        
+                            </ul>
+                           
+                        </div><!--/.nav-collapse -->
+
+                    </nav>
+                    <div class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+                        <img data-toggle="collapse" data-target="#searchBox-wrapper" class="m-t-5" src="assets/7-icons/search.svg" alt="Search">
+                    </div>
+                    <div class="col-sm-12 collapse" id="searchBox-wrapper">
+                        <div class="searchBox-wrapper">
+                            <input type="text" name="search" id="searchbox" class="form-control" placeholder="Search" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="body-content"> 
+            <section #home id="home">
+                <div class="container">               
+                    <div class="banner">
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12 wow slideInLeft">
+                                <div class="banner-text">
+                                    <h1>Make development easy with us.</h1>
+                                    <p>Doing development can never be easy, and it takes time and resources. We at Easy Work has the solution.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 col-xs-12 wow bounceInUp" data-wow-delay="1s">
+                                <img src="assets/2-banner/banner.png" class="img-responsive img-r" alt=""/>                                       
+                            </div>
+                        </div>
+                        <img class="pos-abs banner-left hidden-xs hidden-sm" src="assets/2-banner/banner-rounded-001.svg" alt=""/>
+                        <img class="pos-abs banner-right hidden-xs hidden-sm" src="assets/2-banner/banner-rounded-002.svg" alt=""/>
+                    </div>
+                </div> 
+            </section>
+            <section #about id="about">
+                <div class="container">  
+                    <div class="row">
+                        <div class="col-sm-12 col-md-7 wow slideInLeft">
+                            <img src="assets/3-content/content-001.png"class="img-responsive" alt="content"/>
+                        </div>
+                        <div class="col-sm-12 col-md-5 wow slideInRight">
+                            <div class="description-text pull-left max-width">
+                                <h4>We can give you our best user experience to your system</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section #services id="services">
+                <div class="container">  
+                    <div class="row">
+                        <div class="col-sm-12 col-md-5 wow slideInLeft">
+                            <div class="description-text pull-left max-width">
+                                <h4>Easy access. Whenever, wherever you want</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-7 wow slideInRight">
+                            <img src="assets/3-content/content-002.png"class="img-responsive" alt="content"/>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="testimonials">
+                <div class="container wow slideInUp">
+                    <div class="media m-b-50 p-l-15">
+                        <div class="media-left p-r-20">
+                            <span class="Icon-circle red">
+                                <img src="assets/7-icons/heart.svg" class="img-circle" alt="Sample Image">
+                            </span>
+                        </div>
+                        <div class="media-body">
+                            <div class="col-xs-12 col-sm-7 col-md-5">
+                               <h4>What other people say about our services</h4> 
+                            </div>
+                        </div>
+                    </div>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>                               
+                        </ol>   
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="row_slider">
+                                    <div class="col-sm-6">
+                                        <div class="media m-b-20">
+                                            <div class="media-left">                                                
+                                                <div class="img-box"><img src="assets/4-people/vincent-joignie.jpg" alt=""></div>                                               
+                                            </div>
+                                            <div class="media-body text-left">
+                                                <label class="max-width">David Champion</label>
+                                                <small>CEO of cloud</small>
+                                            </div>
+                                            <div class="pull-left max-width m-t-10">
+                                                <p class="testimonial">"System is excellent. It has made my system usert experience to become one of the easiest!"</p>                                  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="media m-b-20">
+                                            <div class="media-left">                                                
+                                                <div class="img-box"><img src="assets/4-people/david-campion.jpg" alt=""></div>                                               
+                                            </div>
+                                            <div class="media-body text-left">
+                                                <label class="max-width">David Frank Van Hord</label>
+                                                <small>CEO of Marks.co</small>
+                                            </div>
+                                            <div class="pull-left max-width m-t-10">
+                                                <p class="testimonial">"I just wanted to share a quick note and let you know that you guys do a really good job"</p>                                  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                  	
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row_slider">
+                                    <div class="col-sm-6">
+                                        <div class="media m-b-20">
+                                            <div class="media-left">                                                
+                                                <div class="img-box"><img src="assets/4-people/vincent-joignie.jpg" alt=""></div>                                               
+                                            </div>
+                                            <div class="media-body text-left">
+                                                <label class="max-width">Lucas Bond</label>
+                                                <small>BOD of Skyscanner</small>
+                                            </div>
+                                            <div class="pull-left max-width m-t-10">
+                                                <p class="testimonial">"System is excellent. It has made my system usert experience to become one of the easiest!"</p>                                  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="media m-b-20">
+                                            <div class="media-left">                                                
+                                                <div class="img-box"><img src="assets/4-people/darlene-chabrat.jpg" alt=""></div>                                               
+                                            </div>
+                                            <div class="media-body text-left">
+                                                <label class="max-width">David Champion</label>
+                                                <small>CEO of cloud</small>
+                                            </div>
+                                            <div class="pull-left max-width m-t-10">
+                                                <p class="testimonial">"System is excellent. It has made my system usert experience to become one of the easiest!"</p>                                  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <!--                            <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                                                        <i class="fa fa-angle-left"></i>                                
+                                                    </a>-->
+                        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                            <img src="assets/7-icons/arrow-right.svg" alt="Next">
+                        </a>
+                    </div>
+                </div>
+            </section>                    
+            <section #team id="team">
+                <div class="container wow slideInUp">
+                    <div class="media m-b-50 col-sm-12 p-l-15">
+                        <div class="media-left p-r-20">
+                            <span class="Icon-circle pink">
+                                <img src="assets/7-icons/happy-face.svg" class="img-circle" alt="Sample Image">
+                            </span>
+                        </div>
+                        <div class="media-body">
+                            <div class="col-xs-12 col-sm-7 col-md-5">
+                               <h4>Our important people is listed here</h4> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pull-left max-width team-wrapper">
+                        <form>
+                            <div *ngIf="!editMode" class="col-sm-12 text-right">
+                                <button type="button" id="edit_people" (click)="editPeople($event)" class="btn btn-edit m-r-10 m-b-15">Edit</button>
+                                <button type="button" id="add_people" (click)="openModal()" class="btn btn-add m-b-15">Add </button>
+                            </div>
+                            <div *ngIf="editMode" class="col-sm-12 text-right" id="editActions" >
+                                <button type="button" id="cancel" (click)="Cancel($event)" class="btn m-r-10 m-b-15">Cancel</button>
+                                <img id="delete" class="m-b-15" (click)="deleteUser($event)" src="assets/7-icons/garbage.svg" alt="delete" />
+                            </div>
+                        <div class="pull-left max-width team-container">
+                          <div *ngFor="let user of usersList; index as i" [attr.data-index]="i" class="profile-box wow fadeInLeft" [@EnterLeave]="'flyIn'">
+                                <div *ngIf="editMode" class="checkBox control">
+                                    <input type="checkbox" value="user_{{i}}" name="radio" (change)="onSelectionChange($event, i)"><label class="control-indicator" for="user_{{i}}"></label>
+                                </div>
+                                 <div class="edit" (click)="editUser(i)" title="Edit"><img src="assets/7-icons/pencil.svg" alt="edit"/></div>
+
+                                <div (click)="showDescriptionModal(i)" class="user-image"> <img src="{{user.imgSrc}}" class="img-responsive" alt="gaetan"/></div>
+                                <div class="user-detail">
+                                    <p class="uName">{{user.name}}</p>
+                                    <small class="uPosition">{{user.position}}</small>
+                                </div>
+                          </div>
+                           
+                                
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section id="partners">
+                <div class="container">
+                    <h4 class="text-center m-b-40">We've worked with</h4> 
+                    <div class="partners disp_flex flex-row flex-wrap">
+                        <span> <img src="assets/5-partners/apple.PNG" alt=""/></span>
+                        <span> <img src="assets/5-partners/airbnb.png" alt=""/></span>
+                        <span> <img src="assets/5-partners/google.PNG" alt=""/></span>
+                        <span> <img src="assets/5-partners/nvidia.PNG" alt=""/></span>
+                        <span> <img src="assets/5-partners/tesla.PNG" alt=""/></span>
+                        <span> <img src="assets/5-partners/samsung.PNG" alt=""/></span>
+                        <span> <img src="assets/5-partners/facebook.PNG" alt=""/></span>
+                        <span> <img src="assets/5-partners/microsoft.PNG" alt=""/></span>
+
+                    </div>
+                </div>
+            </section>
+            <section #contactUs id="contactUs">
+                <div class="container">
+                    <h4 class="text-center m-b-40">Contact Us</h4> 
+                     <div class="row disp_flex align-items-center flex-wrap wow bounceInUp" data-wow-delay="0.5s">
+                         <div class="col-xs-12 col-md-offset-1 col-sm-12 col-md-5 m-b-30">
+                             <div class="pull-left max-width contact-form-wrapper">
+                                <form>
+                                 <div class="form-group">
+                                     <label>Name</label>
+                                     <input type="text" name="name" placeholder="Enter your name" class="form-control" />
+                                 </div>
+                                 <div class="form-group">
+                                     <label>Email</label>
+                                     <input type="email" name="name" placeholder="Enter your email" class="form-control" />
+                                 </div>
+                                 <div class="form-group">
+                                     <label>Subject</label>
+                                     <select class="form-control">
+                                         <option value="">Please select your subject</option>
+                                         <option value="1">My Subject</option>
+                                     </select>
+                                 </div>
+                                 <div class="form-group">
+                                     <label>Message</label>
+                                     <textarea class="form-control" cols="5" rows="6" placeholder="Write your message here"></textarea>
+                                 </div>
+                                 <div class="form-group text-right">
+                                 <button type="button" class="btn btn-primary">Send</button>
+                                 </div>
+                             </form>
+                             </div>
+                         </div>
+                         <div class="col-xs-12 col-sm-12 col-md-4 mapp-lr-0">
+                             <div class="mapouter row"><div class="gmap_canvas"><iframe class="max-width" height="470" id="gmap_canvas" src="https://maps.google.com/maps?q=Desa%20water%20park&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
+                         </div>
+                     </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-3 logo-footer">
+                        <img src="assets/1-header/logo.png" class="pull-left m-r-10 m-b-20 m-l-20" alt="Easy Work"/>
+                       <h5 class="white pull-left">Easy Work</h5>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="p-lr-20">
+                            <label>Address</label>
+                            52-1 Jalan Awan Hijau, Taman Overseas Union, 58200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="p-lr-20">
+                            <label>Address</label>
+                            <p>03-7451 5283</p>
+                            <label>Fax</label>
+                            <p>03-7451 5283</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <img class="pos-abs banner-left hidden-xs hidden-sm" src="assets/2-banner/banner-rounded-001.svg" alt=""/>
+             <img class="pos-abs banner-right hidden-xs hidden-sm" src="assets/2-banner/banner-rounded-002.svg" alt=""/>
+        </footer>
+    </main>
+    <a class="scrollTop" href=""><i class="fa fa-arrow-circle-up font40"></i></a>
+</div>
+
+
+<ng-template #addPeopleModal let-modal>
+        <div class="pull-left max-width ngbootstrapModal">
+            <div class="modal-header">
+                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                            <span aria-hidden="true"><img src="assets/7-icons/cancel_1.svg" alt="close"></span>
+                        </button>
+                        <h6 class="modal-title">Add people</h6>
+            </div>
+            <div class="modal-body text-center">
+                    <form [formGroup]="addUserForm">
+                            <div class="row">
+                            <div class="col-sm-12">
+                                <div class="uploadImage text-center">
+                                    <div class="pictureContainer">
+                                        <img *ngIf="!url" src="assets/7-icons/user.svg" alt=""/>
+                                        <img id="previewImg" height="150" width="150" [src]="url" *ngIf="url"  alt="user photo"/>
+                                        <span class="editButton" (click)="selectImage.click();">
+                                            <img src="assets/7-icons/pencil.svg" width="12" alt="Select photo"/>
+                                        </span>
+                                    </div>
+                                  
+                                    <input type="file" id="uploadImage" #selectImage formControlName="picture" accept='image/*' (change)="onSelectFile($event)" required="required" class="hidden" />
+                                    <div *ngIf="submitted && !url" class="invalid-feedback">
+                                            <div *ngIf="!url">Choose a picture</div>
+                                    </div>
+                                    <div class="invalid-feedback" *ngIf="message">{{message}}</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="text-left" for="userName">Name</label>
+                                    <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" id="name" required="required" placeholder="Enter name" />
+                                    <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                                        <div *ngIf="f.name.errors.required">Name is required</div>
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <label class="text-left" for="userPosition">Position</label>
+                                    <input type="text" formControlName="position" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.position.errors }" id="userPosition" required="required" placeholder="Enter position" />
+                                    <div *ngIf="submitted && f.position.errors" class="invalid-feedback">
+                                        <div *ngIf="f.position.errors.required">Position is required</div>
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <label class="text-left" for="userName">Description</label>
+                                    <textarea class="form-control" formControlName="description" rows="5" [ngClass]="{ 'is-invalid': submitted && f.description.errors }" id="userDescription" required="required" placeholder="Enter description"></textarea>
+                                    <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+                                        <div *ngIf="f.description.errors.required">Description is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+                        </form>
+                <br>
+                <div class="modal-footer text-right">
+                        <button type="button" class="btn btn-cancel" (click)="modal.close('No')">Cancel</button>
+                        <button *ngIf="!editMode" type="submit" (click)="onSubmit()" class="btn btn-primary">Save</button>
+                        <button *ngIf="editMode" type="submit" (click)="updateUser(currentItemIndex)" class="btn btn-primary">Update</button>
+                </div>
+            </div>
+        </div>
+
+    </ng-template>
+
+
+    <!-- ////for description -->
+    <ng-template #descriptionModal let-modal>
+            <div class="pull-left max-width ngbootstrapModal ">
+                <div class="modal-header p-b-0">
+                        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                                <span aria-hidden="true"><img src="assets/7-icons/cancel_1.svg" alt="close"></span>
+                        </button>                    
+                </div>
+                <div class="modal-body text-center">
+                        <div class="media">
+                                <div class="media-left">
+                                  <img *ngIf="detailImage" [src]="detailImage" class="media-object" alt="" style="max-width:190px;" />
+                                </div>
+                                <div class="media-body text-left">
+                                  <span *ngIf="detailName"  class="media-heading detailName">{{detailName}}</span>
+                                  <h6 class="detailPosition" *ngIf="detailPosition">{{detailPosition}}</h6>
+                                  <p class="text" *ngIf="detailDescr">{{detailDescr}}}</p>
+                                </div>
+                        </div>
+                    
+                </div>
+            </div>
+    
+        </ng-template>
